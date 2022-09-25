@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sat, 24 Sep 2022 23:36:05 GMT
+      - Sun, 25 Sep 2022 08:01:32 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -39,5 +39,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"cod":"404","message":"Internal error"}'
-  recorded_at: Sat, 24 Sep 2022 23:36:05 GMT
+  recorded_at: Sun, 25 Sep 2022 08:01:32 GMT
 recorded_with: VCR 6.1.0
