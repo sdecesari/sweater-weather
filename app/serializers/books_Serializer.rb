@@ -7,7 +7,7 @@ class BooksSerializer
         "type": "books",
         "attributes": 
         {
-          "destination": "#{location}",
+          "destination": location,
           # "forecast": 
           # {
           #   "summary": forecast[:current][:weather][0][:description],

@@ -1,0 +1,891 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=sdXrJbQBw35fbFNNAD6aStq6V6WUGekO&location=seattle,wa
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 26 Sep 2022 17:47:46 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1029'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 26 Sep 2022 17:47:46 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=AA54579690644AC7D2CC1D84AC7B2E54; Path=/; HttpOnly
+      X-Vz-Migration-Api:
+      - 'false'
+      Status:
+      - success
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"seattle,wa"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Seattle","adminArea5Type":"City","adminArea4":"King
+        County","adminArea4Type":"County","adminArea3":"WA","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039223","unknownInput":"","type":"s","latLng":{"lat":47.603229,"lng":-122.33028},"displayLatLng":{"lat":47.603229,"lng":-122.33028},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=sdXrJbQBw35fbFNNAD6aStq6V6WUGekO&type=map&size=225,160&locations=47.603229,-122.33028|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1829570585"}]}]}'
+  recorded_at: Mon, 26 Sep 2022 17:47:46 GMT
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json?limit=5&q=seattle,wa
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Mon, 26 Sep 2022 17:47:46 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.192 TT 0 0.193"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 5271,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "key": "/works/OL8290516W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL8227475M",
+                        "/works/OL8290516W",
+                        "/authors/OL2754912A"
+                    ],
+                    "title": "Seattle, Wa",
+                    "title_suggest": "Seattle, Wa",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL8227475M"
+                    ],
+                    "publish_date": [
+                        "December 2003"
+                    ],
+                    "publish_year": [
+                        2003
+                    ],
+                    "first_publish_year": 2003,
+                    "isbn": [
+                        "9780841625044",
+                        "0841625042"
+                    ],
+                    "last_modified_i": 1341770521,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL8227475M",
+                    "cover_i": 1589730,
+                    "publisher": [
+                        "Langenscheidt Publishers"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2754912A"
+                    ],
+                    "author_name": [
+                        "American Map Corporation"
+                    ],
+                    "publisher_facet": [
+                        "Langenscheidt Publishers"
+                    ],
+                    "_version_": 1735676835903045632,
+                    "author_facet": [
+                        "OL2754912A American Map Corporation"
+                    ]
+                },
+                {
+                    "key": "/works/OL8415241W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL7900945M",
+                        "/works/OL8415241W",
+                        "/authors/OL2806909A"
+                    ],
+                    "title": "Maritime Seattle    (WA)",
+                    "title_suggest": "Maritime Seattle    (WA)",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL7900945M"
+                    ],
+                    "publish_date": [
+                        "October 14, 2002"
+                    ],
+                    "publish_year": [
+                        2002
+                    ],
+                    "first_publish_year": 2002,
+                    "number_of_pages_median": 128,
+                    "oclc": [
+                        "51110404"
+                    ],
+                    "isbn": [
+                        "9780738520643",
+                        "0738520640"
+                    ],
+                    "last_modified_i": 1303894909,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL7900945M",
+                    "cover_i": 466016,
+                    "first_sentence": [
+                        "Lieutenant Charles Wilkes, Commander of the first United States Naval Exploring Expedition, brought four ships, Vincennes, Peacock, Porpoise, and Relief, with scientists, naturalists, and botanists to Puget Sound in 1841."
+                    ],
+                    "publisher": [
+                        "Arcadia Publishing"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2806909A"
+                    ],
+                    "author_name": [
+                        "Gary White"
+                    ],
+                    "id_goodreads": [
+                        "5127876"
+                    ],
+                    "id_librarything": [
+                        "2751956"
+                    ],
+                    "publisher_facet": [
+                        "Arcadia Publishing"
+                    ],
+                    "_version_": 1735676935111966722,
+                    "author_facet": [
+                        "OL2806909A Gary White"
+                    ]
+                },
+                {
+                    "key": "/works/OL8503469W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL8033762M",
+                        "/works/OL8503469W",
+                        "/authors/OL2843451A"
+                    ],
+                    "title": "Seattle Wa486",
+                    "title_suggest": "Seattle Wa486",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL8033762M"
+                    ],
+                    "publish_date": [
+                        "January 2004"
+                    ],
+                    "publish_year": [
+                        2004
+                    ],
+                    "first_publish_year": 2004,
+                    "number_of_pages_median": 1,
+                    "oclc": [
+                        "56214306"
+                    ],
+                    "isbn": [
+                        "9780762534890",
+                        "0762534893"
+                    ],
+                    "last_modified_i": 1304026838,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2843451A"
+                    ],
+                    "author_name": [
+                        "Universal Map"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1735677215646941184,
+                    "author_facet": [
+                        "OL2843451A Universal Map"
+                    ]
+                },
+                {
+                    "key": "/works/OL9443366W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10608140M",
+                        "/works/OL9443366W",
+                        "/subjects/swedish_americans",
+                        "/subjects/pictorial_works",
+                        "/subjects/history",
+                        "/subjects/biography",
+                        "/subjects/social_life_and_customs",
+                        "/authors/OL3471641A"
+                    ],
+                    "title": "Swedish Seattle (WA)",
+                    "title_suggest": "Swedish Seattle (WA)",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10608140M"
+                    ],
+                    "publish_date": [
+                        "October 15, 2007"
+                    ],
+                    "publish_year": [
+                        2007
+                    ],
+                    "first_publish_year": 2007,
+                    "number_of_pages_median": 128,
+                    "lccn": [
+                        "2007927174"
+                    ],
+                    "lcc": [
+                        "F--0899.00000000.S49 S236 2007"
+                    ],
+                    "isbn": [
+                        "9780738548081",
+                        "0738548081"
+                    ],
+                    "last_modified_i": 1608420636,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL10608140M",
+                    "cover_i": 2563880,
+                    "publisher": [
+                        "Arcadia Publishing"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL3471641A"
+                    ],
+                    "author_name": [
+                        "Paul Norlen"
+                    ],
+                    "subject": [
+                        "Swedish Americans",
+                        "Pictorial works",
+                        "History",
+                        "Biography",
+                        "Social life and customs"
+                    ],
+                    "id_goodreads": [
+                        "1825124"
+                    ],
+                    "id_librarything": [
+                        "4309859"
+                    ],
+                    "publisher_facet": [
+                        "Arcadia Publishing"
+                    ],
+                    "subject_facet": [
+                        "Biography",
+                        "History",
+                        "Pictorial works",
+                        "Social life and customs",
+                        "Swedish Americans"
+                    ],
+                    "_version_": 1735678250510712833,
+                    "lcc_sort": "F--0899.00000000.S49 S236 2007",
+                    "author_facet": [
+                        "OL3471641A Paul Norlen"
+                    ],
+                    "subject_key": [
+                        "biography",
+                        "history",
+                        "pictorial_works",
+                        "social_life_and_customs",
+                        "swedish_americans"
+                    ]
+                },
+                {
+                    "key": "/works/OL8519843W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL13631376M",
+                        "/works/OL8519843W",
+                        "/authors/OL2851225A"
+                    ],
+                    "title": "Pribilof Islands Restoration Project, Seattle, WA",
+                    "title_suggest": "Pribilof Islands Restoration Project, Seattle, WA",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL13631376M"
+                    ],
+                    "publish_date": [
+                        "2002"
+                    ],
+                    "publish_year": [
+                        2002
+                    ],
+                    "first_publish_year": 2002,
+                    "number_of_pages_median": 24,
+                    "publish_place": [
+                        "Bellingham, Wash"
+                    ],
+                    "oclc": [
+                        "51625831"
+                    ],
+                    "last_modified_i": 1260841601,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Huxley College of the Environment, Western Washington University"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2851225A"
+                    ],
+                    "author_name": [
+                        "John S. Fox"
+                    ],
+                    "publisher_facet": [
+                        "Huxley College of the Environment, Western Washington University"
+                    ],
+                    "_version_": 1735677147655176193,
+                    "author_facet": [
+                        "OL2851225A John S. Fox"
+                    ]
+                }
+            ],
+            "num_found": 5271,
+            "q": "seattle,wa",
+            "offset": null
+        }
+  recorded_at: Mon, 26 Sep 2022 17:47:46 GMT
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json?limit=5&q=seattle,wa
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Mon, 26 Sep 2022 17:47:47 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.010 TT 0 0.011"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 5271,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "key": "/works/OL8290516W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL8227475M",
+                        "/works/OL8290516W",
+                        "/authors/OL2754912A"
+                    ],
+                    "title": "Seattle, Wa",
+                    "title_suggest": "Seattle, Wa",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL8227475M"
+                    ],
+                    "publish_date": [
+                        "December 2003"
+                    ],
+                    "publish_year": [
+                        2003
+                    ],
+                    "first_publish_year": 2003,
+                    "isbn": [
+                        "9780841625044",
+                        "0841625042"
+                    ],
+                    "last_modified_i": 1341770521,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL8227475M",
+                    "cover_i": 1589730,
+                    "publisher": [
+                        "Langenscheidt Publishers"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2754912A"
+                    ],
+                    "author_name": [
+                        "American Map Corporation"
+                    ],
+                    "publisher_facet": [
+                        "Langenscheidt Publishers"
+                    ],
+                    "_version_": 1735676835903045632,
+                    "author_facet": [
+                        "OL2754912A American Map Corporation"
+                    ]
+                },
+                {
+                    "key": "/works/OL8415241W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL7900945M",
+                        "/works/OL8415241W",
+                        "/authors/OL2806909A"
+                    ],
+                    "title": "Maritime Seattle    (WA)",
+                    "title_suggest": "Maritime Seattle    (WA)",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL7900945M"
+                    ],
+                    "publish_date": [
+                        "October 14, 2002"
+                    ],
+                    "publish_year": [
+                        2002
+                    ],
+                    "first_publish_year": 2002,
+                    "number_of_pages_median": 128,
+                    "oclc": [
+                        "51110404"
+                    ],
+                    "isbn": [
+                        "9780738520643",
+                        "0738520640"
+                    ],
+                    "last_modified_i": 1303894909,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL7900945M",
+                    "cover_i": 466016,
+                    "first_sentence": [
+                        "Lieutenant Charles Wilkes, Commander of the first United States Naval Exploring Expedition, brought four ships, Vincennes, Peacock, Porpoise, and Relief, with scientists, naturalists, and botanists to Puget Sound in 1841."
+                    ],
+                    "publisher": [
+                        "Arcadia Publishing"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2806909A"
+                    ],
+                    "author_name": [
+                        "Gary White"
+                    ],
+                    "id_goodreads": [
+                        "5127876"
+                    ],
+                    "id_librarything": [
+                        "2751956"
+                    ],
+                    "publisher_facet": [
+                        "Arcadia Publishing"
+                    ],
+                    "_version_": 1735676935111966722,
+                    "author_facet": [
+                        "OL2806909A Gary White"
+                    ]
+                },
+                {
+                    "key": "/works/OL8503469W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL8033762M",
+                        "/works/OL8503469W",
+                        "/authors/OL2843451A"
+                    ],
+                    "title": "Seattle Wa486",
+                    "title_suggest": "Seattle Wa486",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL8033762M"
+                    ],
+                    "publish_date": [
+                        "January 2004"
+                    ],
+                    "publish_year": [
+                        2004
+                    ],
+                    "first_publish_year": 2004,
+                    "number_of_pages_median": 1,
+                    "oclc": [
+                        "56214306"
+                    ],
+                    "isbn": [
+                        "9780762534890",
+                        "0762534893"
+                    ],
+                    "last_modified_i": 1304026838,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2843451A"
+                    ],
+                    "author_name": [
+                        "Universal Map"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1735677215646941184,
+                    "author_facet": [
+                        "OL2843451A Universal Map"
+                    ]
+                },
+                {
+                    "key": "/works/OL9443366W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10608140M",
+                        "/works/OL9443366W",
+                        "/subjects/swedish_americans",
+                        "/subjects/pictorial_works",
+                        "/subjects/history",
+                        "/subjects/biography",
+                        "/subjects/social_life_and_customs",
+                        "/authors/OL3471641A"
+                    ],
+                    "title": "Swedish Seattle (WA)",
+                    "title_suggest": "Swedish Seattle (WA)",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10608140M"
+                    ],
+                    "publish_date": [
+                        "October 15, 2007"
+                    ],
+                    "publish_year": [
+                        2007
+                    ],
+                    "first_publish_year": 2007,
+                    "number_of_pages_median": 128,
+                    "lccn": [
+                        "2007927174"
+                    ],
+                    "lcc": [
+                        "F--0899.00000000.S49 S236 2007"
+                    ],
+                    "isbn": [
+                        "9780738548081",
+                        "0738548081"
+                    ],
+                    "last_modified_i": 1608420636,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL10608140M",
+                    "cover_i": 2563880,
+                    "publisher": [
+                        "Arcadia Publishing"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL3471641A"
+                    ],
+                    "author_name": [
+                        "Paul Norlen"
+                    ],
+                    "subject": [
+                        "Swedish Americans",
+                        "Pictorial works",
+                        "History",
+                        "Biography",
+                        "Social life and customs"
+                    ],
+                    "id_goodreads": [
+                        "1825124"
+                    ],
+                    "id_librarything": [
+                        "4309859"
+                    ],
+                    "publisher_facet": [
+                        "Arcadia Publishing"
+                    ],
+                    "subject_facet": [
+                        "Biography",
+                        "History",
+                        "Pictorial works",
+                        "Social life and customs",
+                        "Swedish Americans"
+                    ],
+                    "_version_": 1735678250510712833,
+                    "lcc_sort": "F--0899.00000000.S49 S236 2007",
+                    "author_facet": [
+                        "OL3471641A Paul Norlen"
+                    ],
+                    "subject_key": [
+                        "biography",
+                        "history",
+                        "pictorial_works",
+                        "social_life_and_customs",
+                        "swedish_americans"
+                    ]
+                },
+                {
+                    "key": "/works/OL8519843W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL13631376M",
+                        "/works/OL8519843W",
+                        "/authors/OL2851225A"
+                    ],
+                    "title": "Pribilof Islands Restoration Project, Seattle, WA",
+                    "title_suggest": "Pribilof Islands Restoration Project, Seattle, WA",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL13631376M"
+                    ],
+                    "publish_date": [
+                        "2002"
+                    ],
+                    "publish_year": [
+                        2002
+                    ],
+                    "first_publish_year": 2002,
+                    "number_of_pages_median": 24,
+                    "publish_place": [
+                        "Bellingham, Wash"
+                    ],
+                    "oclc": [
+                        "51625831"
+                    ],
+                    "last_modified_i": 1260841601,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Huxley College of the Environment, Western Washington University"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2851225A"
+                    ],
+                    "author_name": [
+                        "John S. Fox"
+                    ],
+                    "publisher_facet": [
+                        "Huxley College of the Environment, Western Washington University"
+                    ],
+                    "_version_": 1735677147655176193,
+                    "author_facet": [
+                        "OL2851225A John S. Fox"
+                    ]
+                }
+            ],
+            "num_found": 5271,
+            "q": "seattle,wa",
+            "offset": null
+        }
+  recorded_at: Mon, 26 Sep 2022 17:47:47 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/onecall?appid=ac304981920fd3cb47c94111644cd756&exclude=minutely,alerts&lat=47.603229&lon=-122.33028&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 26 Sep 2022 17:47:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '17498'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/onecall?exclude=minutely%2Calerts&lat=47.6&lon=-122.33&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"lat":47.6032,"lon":-122.3303,"timezone":"America/Los_Angeles","timezone_offset":-25200,"current":{"dt":1664214468,"sunrise":1664200894,"sunset":1664243975,"temp":69.64,"feels_like":69.26,"pressure":1016,"humidity":63,"dew_point":56.5,"uvi":2.53,"clouds":0,"visibility":10000,"wind_speed":3.44,"wind_deg":310,"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50d"},{"id":711,"main":"Smoke","description":"smoke","icon":"50d"}]},"hourly":[{"dt":1664211600,"temp":69.6,"feels_like":69.08,"pressure":1016,"humidity":60,"dew_point":55.11,"uvi":1.44,"clouds":10,"visibility":10000,"wind_speed":1.14,"wind_deg":315,"wind_gust":1.43,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664215200,"temp":69.64,"feels_like":69.26,"pressure":1016,"humidity":63,"dew_point":56.5,"uvi":2.53,"clouds":0,"visibility":10000,"wind_speed":1.72,"wind_deg":316,"wind_gust":1.36,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664218800,"temp":71.47,"feels_like":71.01,"pressure":1016,"humidity":57,"dew_point":55.45,"uvi":3.74,"clouds":9,"visibility":10000,"wind_speed":1.45,"wind_deg":313,"wind_gust":0.94,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664222400,"temp":74.68,"feels_like":74.19,"pressure":1015,"humidity":50,"dew_point":54.82,"uvi":4.21,"clouds":12,"visibility":10000,"wind_speed":1.57,"wind_deg":278,"wind_gust":2.21,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"pop":0},{"dt":1664226000,"temp":78.58,"feels_like":78.12,"pressure":1014,"humidity":42,"dew_point":53.6,"uvi":3.97,"clouds":13,"visibility":10000,"wind_speed":1.43,"wind_deg":265,"wind_gust":2.8,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"pop":0},{"dt":1664229600,"temp":82.42,"feels_like":81.14,"pressure":1014,"humidity":34,"dew_point":51.26,"uvi":3.22,"clouds":13,"visibility":10000,"wind_speed":2.01,"wind_deg":264,"wind_gust":3.62,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"pop":0},{"dt":1664233200,"temp":84.9,"feels_like":82.45,"pressure":1012,"humidity":27,"dew_point":47.05,"uvi":2.02,"clouds":13,"visibility":10000,"wind_speed":2.06,"wind_deg":280,"wind_gust":3.89,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"pop":0},{"dt":1664236800,"temp":82.63,"feels_like":81.03,"pressure":1012,"humidity":31,"dew_point":47.5,"uvi":0.9,"clouds":11,"visibility":10000,"wind_speed":1.63,"wind_deg":310,"wind_gust":3.98,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"pop":0},{"dt":1664240400,"temp":78.35,"feels_like":77.67,"pressure":1012,"humidity":38,"dew_point":49.44,"uvi":0.26,"clouds":3,"visibility":10000,"wind_speed":2.01,"wind_deg":357,"wind_gust":3.36,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664244000,"temp":71.02,"feels_like":70.09,"pressure":1012,"humidity":48,"dew_point":49.42,"uvi":0,"clouds":3,"visibility":10000,"wind_speed":3.33,"wind_deg":4,"wind_gust":3.47,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1664247600,"temp":66.92,"feels_like":65.98,"pressure":1012,"humidity":57,"dew_point":50.07,"uvi":0,"clouds":2,"visibility":10000,"wind_speed":3.22,"wind_deg":356,"wind_gust":3.27,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1664251200,"temp":64.44,"feels_like":63.5,"pressure":1012,"humidity":62,"dew_point":50.29,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":2.66,"wind_deg":351,"wind_gust":2.75,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1664254800,"temp":63.01,"feels_like":62.08,"pressure":1013,"humidity":65,"dew_point":50.4,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":2.08,"wind_deg":357,"wind_gust":2.17,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1664258400,"temp":61.68,"feels_like":60.75,"pressure":1013,"humidity":68,"dew_point":50.38,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":1.14,"wind_deg":346,"wind_gust":1.99,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1664262000,"temp":60.46,"feels_like":59.54,"pressure":1013,"humidity":71,"dew_point":50.36,"uvi":0,"clouds":5,"visibility":10000,"wind_speed":0.65,"wind_deg":330,"wind_gust":1.74,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1664265600,"temp":59.38,"feels_like":58.5,"pressure":1013,"humidity":74,"dew_point":50.5,"uvi":0,"clouds":7,"visibility":10000,"wind_speed":0.16,"wind_deg":50,"wind_gust":1.48,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1664269200,"temp":58.55,"feels_like":57.67,"pressure":1013,"humidity":76,"dew_point":50.56,"uvi":0,"clouds":21,"visibility":10000,"wind_speed":0.76,"wind_deg":155,"wind_gust":1.39,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02n"}],"pop":0},{"dt":1664272800,"temp":57.81,"feels_like":56.97,"pressure":1012,"humidity":78,"dew_point":50.4,"uvi":0,"clouds":40,"visibility":10000,"wind_speed":0.85,"wind_deg":162,"wind_gust":1.28,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0},{"dt":1664276400,"temp":56.91,"feels_like":56.07,"pressure":1012,"humidity":80,"dew_point":50.34,"uvi":0,"clouds":46,"visibility":10000,"wind_speed":0.56,"wind_deg":228,"wind_gust":1.05,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0},{"dt":1664280000,"temp":56.23,"feels_like":55.36,"pressure":1012,"humidity":81,"dew_point":50.29,"uvi":0,"clouds":47,"visibility":10000,"wind_speed":0.74,"wind_deg":235,"wind_gust":0.94,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0},{"dt":1664283600,"temp":55.67,"feels_like":54.84,"pressure":1012,"humidity":83,"dew_point":50.18,"uvi":0,"clouds":20,"visibility":10000,"wind_speed":1.21,"wind_deg":155,"wind_gust":1.36,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02n"}],"pop":0},{"dt":1664287200,"temp":55.06,"feels_like":54.21,"pressure":1012,"humidity":84,"dew_point":50,"uvi":0,"clouds":13,"visibility":10000,"wind_speed":1.36,"wind_deg":193,"wind_gust":1.57,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02n"}],"pop":0},{"dt":1664290800,"temp":57.83,"feels_like":56.93,"pressure":1012,"humidity":77,"dew_point":50.59,"uvi":0.15,"clouds":9,"visibility":10000,"wind_speed":1.68,"wind_deg":199,"wind_gust":2.26,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664294400,"temp":63.59,"feels_like":62.65,"pressure":1012,"humidity":64,"dew_point":51.06,"uvi":0.63,"clouds":7,"visibility":10000,"wind_speed":2.48,"wind_deg":178,"wind_gust":3.78,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664298000,"temp":68.77,"feels_like":67.89,"pressure":1012,"humidity":54,"dew_point":51.24,"uvi":1.54,"clouds":6,"visibility":10000,"wind_speed":3.22,"wind_deg":192,"wind_gust":4.9,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664301600,"temp":73.4,"feels_like":72.64,"pressure":1012,"humidity":47,"dew_point":51.53,"uvi":2.71,"clouds":5,"visibility":10000,"wind_speed":4.25,"wind_deg":211,"wind_gust":6.42,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664305200,"temp":77.31,"feels_like":76.62,"pressure":1012,"humidity":40,"dew_point":51.35,"uvi":3.69,"clouds":1,"visibility":10000,"wind_speed":5.35,"wind_deg":211,"wind_gust":7.96,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664308800,"temp":80.71,"feels_like":80.01,"pressure":1011,"humidity":35,"dew_point":50.61,"uvi":4.16,"clouds":3,"visibility":10000,"wind_speed":5.73,"wind_deg":203,"wind_gust":8.21,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664312400,"temp":83.17,"feels_like":81.54,"pressure":1011,"humidity":32,"dew_point":49.86,"uvi":3.92,"clouds":2,"visibility":10000,"wind_speed":6.89,"wind_deg":209,"wind_gust":9.6,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664316000,"temp":84.29,"feels_like":82.24,"pressure":1010,"humidity":30,"dew_point":49.53,"uvi":3.05,"clouds":3,"visibility":10000,"wind_speed":7.05,"wind_deg":208,"wind_gust":9.66,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664319600,"temp":83.68,"feels_like":81.84,"pressure":1010,"humidity":31,"dew_point":49.46,"uvi":1.9,"clouds":8,"visibility":10000,"wind_speed":8.59,"wind_deg":224,"wind_gust":10.94,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1664323200,"temp":80.19,"feels_like":79.59,"pressure":1010,"humidity":34,"dew_point":49.41,"uvi":0.85,"clouds":23,"visibility":10000,"wind_speed":9.42,"wind_deg":238,"wind_gust":12.59,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"pop":0},{"dt":1664326800,"temp":74.55,"feels_like":73.63,"pressure":1011,"humidity":41,"dew_point":48.9,"uvi":0.18,"clouds":41,"visibility":10000,"wind_speed":6.4,"wind_deg":241,"wind_gust":15.08,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"pop":0},{"dt":1664330400,"temp":67.12,"feels_like":66.02,"pressure":1012,"humidity":53,"dew_point":48.56,"uvi":0,"clouds":65,"visibility":10000,"wind_speed":3.58,"wind_deg":229,"wind_gust":13.44,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1664334000,"temp":64.45,"feels_like":63.32,"pressure":1013,"humidity":58,"dew_point":48.94,"uvi":0,"clouds":74,"visibility":10000,"wind_speed":3.67,"wind_deg":183,"wind_gust":10.76,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1664337600,"temp":62.56,"feels_like":61.48,"pressure":1013,"humidity":63,"dew_point":49.26,"uvi":0,"clouds":59,"visibility":10000,"wind_speed":4.56,"wind_deg":176,"wind_gust":11.5,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1664341200,"temp":61,"feels_like":59.99,"pressure":1014,"humidity":68,"dew_point":50.05,"uvi":0,"clouds":50,"visibility":10000,"wind_speed":4.7,"wind_deg":175,"wind_gust":11.83,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0},{"dt":1664344800,"temp":59.9,"feels_like":58.98,"pressure":1014,"humidity":72,"dew_point":50.56,"uvi":0,"clouds":55,"visibility":10000,"wind_speed":4.54,"wind_deg":176,"wind_gust":11.88,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1664348400,"temp":59.04,"feels_like":58.17,"pressure":1014,"humidity":75,"dew_point":50.68,"uvi":0,"clouds":78,"visibility":10000,"wind_speed":4.65,"wind_deg":186,"wind_gust":12.3,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1664352000,"temp":57.83,"feels_like":56.98,"pressure":1014,"humidity":78,"dew_point":50.76,"uvi":0,"clouds":88,"visibility":10000,"wind_speed":4.63,"wind_deg":188,"wind_gust":12.12,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1664355600,"temp":57.63,"feels_like":56.77,"pressure":1014,"humidity":78,"dew_point":50.56,"uvi":0,"clouds":92,"visibility":10000,"wind_speed":4.83,"wind_deg":170,"wind_gust":11.79,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1664359200,"temp":57.85,"feels_like":56.95,"pressure":1014,"humidity":77,"dew_point":50.36,"uvi":0,"clouds":94,"visibility":10000,"wind_speed":5.28,"wind_deg":182,"wind_gust":13.8,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1664362800,"temp":57.31,"feels_like":56.44,"pressure":1014,"humidity":79,"dew_point":50.52,"uvi":0,"clouds":95,"visibility":10000,"wind_speed":5.35,"wind_deg":176,"wind_gust":14.18,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1664366400,"temp":57.79,"feels_like":56.95,"pressure":1014,"humidity":78,"dew_point":50.52,"uvi":0,"clouds":96,"visibility":10000,"wind_speed":5.57,"wind_deg":163,"wind_gust":13.85,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1664370000,"temp":57.74,"feels_like":56.84,"pressure":1014,"humidity":77,"dew_point":50.5,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":5.64,"wind_deg":162,"wind_gust":13.56,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1664373600,"temp":58.3,"feels_like":57.4,"pressure":1014,"humidity":76,"dew_point":50.43,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":5.41,"wind_deg":159,"wind_gust":12.55,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1664377200,"temp":58.8,"feels_like":57.87,"pressure":1014,"humidity":74,"dew_point":50.32,"uvi":0.01,"clouds":100,"visibility":10000,"wind_speed":5.32,"wind_deg":162,"wind_gust":12.66,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1664380800,"temp":61.12,"feels_like":60.19,"pressure":1015,"humidity":69,"dew_point":50.58,"uvi":0.13,"clouds":100,"visibility":10000,"wind_speed":6.2,"wind_deg":170,"wind_gust":13.22,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0}],"daily":[{"dt":1664222400,"sunrise":1664200894,"sunset":1664243975,"moonrise":1664203620,"moonset":1664246040,"moon_phase":0.03,"temp":{"day":74.68,"min":55.54,"max":84.9,"night":61.68,"eve":71.02,"morn":58.05},"feels_like":{"day":74.19,"night":60.75,"eve":70.09,"morn":57.45},"pressure":1015,"humidity":50,"dew_point":54.82,"wind_speed":3.65,"wind_deg":18,"wind_gust":5.28,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"clouds":12,"pop":0,"uvi":4.21},{"dt":1664308800,"sunrise":1664287375,"sunset":1664330251,"moonrise":1664294460,"moonset":1664333520,"moon_phase":0.06,"temp":{"day":80.71,"min":55.06,"max":84.29,"night":59.9,"eve":67.12,"morn":55.06},"feels_like":{"day":80.01,"night":58.98,"eve":66.02,"morn":54.21},"pressure":1011,"humidity":35,"dew_point":50.61,"wind_speed":9.42,"wind_deg":238,"wind_gust":15.08,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":3,"pop":0,"uvi":4.16},{"dt":1664391600,"sunrise":1664373857,"sunset":1664416528,"moonrise":1664385480,"moonset":1664421180,"moon_phase":0.1,"temp":{"day":67.77,"min":57.31,"max":69.57,"night":59.79,"eve":64.8,"morn":57.74},"feels_like":{"day":66.78,"night":58.8,"eve":63.9,"morn":56.84},"pressure":1015,"humidity":54,"dew_point":50.13,"wind_speed":9.69,"wind_deg":222,"wind_gust":15.97,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"clouds":84,"pop":0.56,"rain":0.54,"uvi":3.16},{"dt":1664478000,"sunrise":1664460338,"sunset":1664502805,"moonrise":1664476680,"moonset":1664509200,"moon_phase":0.13,"temp":{"day":64.78,"min":54.99,"max":70.38,"night":54.99,"eve":68.61,"morn":56.86},"feels_like":{"day":63.97,"night":54.14,"eve":67.42,"morn":56.25},"pressure":1021,"humidity":64,"dew_point":52.05,"wind_speed":7.4,"wind_deg":353,"wind_gust":9.73,"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10d"}],"clouds":94,"pop":0.4,"rain":0.12,"uvi":2.11},{"dt":1664564400,"sunrise":1664546820,"sunset":1664589082,"moonrise":1664567880,"moonset":1664597700,"moon_phase":0.17,"temp":{"day":65.05,"min":51.51,"max":71.92,"night":55.13,"eve":69.3,"morn":51.51},"feels_like":{"day":63.88,"night":54.34,"eve":68.23,"morn":50.54},"pressure":1023,"humidity":56,"dew_point":48.9,"wind_speed":7.99,"wind_deg":349,"wind_gust":13.33,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":2,"pop":0,"uvi":3},{"dt":1664650800,"sunrise":1664633302,"sunset":1664675360,"moonrise":1664658840,"moonset":1664686920,"moon_phase":0.21,"temp":{"day":69.98,"min":52.66,"max":78.94,"night":58.8,"eve":76.01,"morn":52.66},"feels_like":{"day":68.79,"night":57.63,"eve":74.95,"morn":51.82},"pressure":1016,"humidity":45,"dew_point":47.23,"wind_speed":8.32,"wind_deg":352,"wind_gust":13.15,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":3},{"dt":1664737200,"sunrise":1664719785,"sunset":1664761638,"moonrise":1664749320,"moonset":1664776980,"moon_phase":0.25,"temp":{"day":73.2,"min":55.22,"max":82.26,"night":60.46,"eve":80.2,"morn":55.22},"feels_like":{"day":71.96,"night":59.13,"eve":79.3,"morn":53.96},"pressure":1014,"humidity":37,"dew_point":45.28,"wind_speed":5.03,"wind_deg":342,"wind_gust":5.68,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":5,"pop":0,"uvi":3},{"dt":1664823600,"sunrise":1664806267,"sunset":1664847916,"moonrise":1664838900,"moonset":0,"moon_phase":0.28,"temp":{"day":74.82,"min":56.68,"max":84.18,"night":60.51,"eve":80.53,"morn":56.68},"feels_like":{"day":73.6,"night":59.18,"eve":79.5,"morn":55.2},"pressure":1017,"humidity":34,"dew_point":44.62,"wind_speed":4.29,"wind_deg":350,"wind_gust":5.88,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":1,"pop":0,"uvi":3}]}'
+  recorded_at: Mon, 26 Sep 2022 17:47:48 GMT
+recorded_with: VCR 6.1.0

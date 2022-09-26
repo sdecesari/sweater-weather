@@ -2,7 +2,7 @@ class Api::V1::BookSearchController < ApplicationController
   before_action :set_data, only: [:index]
 
   def index
-    json_response(BooksSerializer.serialize(@data, params[:location]))
+    BooksSerializer.serialize(@data, params[:location])
   end
 
   private
