@@ -8,9 +8,7 @@ class BookFacade
   end
 
   def make_books(location, quantity)
-    get_books(location, quantity)[:docs].map do |doc|
-      Book.new(doc)
-    end
+    get_books(location, quantity)[:docs]
   end
 
   private
