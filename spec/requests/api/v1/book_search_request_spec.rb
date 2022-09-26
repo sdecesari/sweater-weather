@@ -1,12 +1,13 @@
 require 'rails_helper'
 
 describe 'Book API' do 
-  location = "denver,co"
-  quantity = 5
   it 'can get a scuccessful response' do 
-    get "/api/v1/book_search?location=#{location}&quantity=#{quantity}"
-    
+    params = { location: "denver,co", quantity: 5 }
+
+    headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+    get '/api/v1/book_search', headers: headers, params: params
 
     expect(response).to be_successful
+    # expect(response.status).to eq(200)
   end
 end 

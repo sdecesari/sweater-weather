@@ -1,5 +1,17 @@
 class Api::V1::BookSearchController < ApplicationController
-  def index
+  before_action :set_data, only: [:index]
 
-  end 
-end 
+  def index
+    json_response(BooksSerializer.serialize(@data, params[:location]))
+  end
+
+  private
+  def set_data
+    location = MapFacade.new.create_location(params[:location])
+    @data = {
+      count: BookFacade.new.total_books_found(params[:location], params[:quantity]),
+      books: BookFacade.new.make_books(params[:location], params[:quantity]),
+      weather: ForecastFacade.new.create_forecast(location.latitude, location.longitude)
+    }
+  end
+end
