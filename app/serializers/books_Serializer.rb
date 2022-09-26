@@ -7,20 +7,20 @@ class BooksSerializer
         "type": "books",
         "attributes": 
         {
-          "destination": location,
-          # "forecast": 
-          # {
-          #   "summary": forecast[:current][:weather][0][:description],
-          #   "temperature": forecast[:current][:temp]
-          # },
+          "destination": "#{location}",
+          "forecast": 
+          {
+            "summary": data[:weather][0].conditions,
+            "temperature": data[:weather][0].temperature
+          },
           "total_books_found": data[:count],
-          # "books": data[:books].shift(quantity).map do |book|
-          #   {
-          #     "isbn": book[:isbn],
-          #     "title": book[:title],
-          #     "publisher": book[:publisher]
-          #   }
-          # end
+          "books": data[:books].map do |book|
+            {
+              isbn: book[:isbn],
+              title: book[:title],
+              publisher: book[:publisher]
+            }
+          end
         }
       }
     }
