@@ -1,0 +1,69 @@
+{
+  :data=>
+  {
+    :id=>nil,
+    :type=>"books",
+    :attributes=>
+    {
+      :destination=>"denver,co",
+      :forecast=>{
+        :summary=>"clear sky",
+        :temperature=>80.22
+      },
+      :total_books_found=>47113,
+      :books=>
+      [
+        {
+          :isbn=>[
+            "0762507845",
+            "9780762507849"
+          ],
+          :title=>"Denver, Co",
+          :publisher=>[
+            "Universal Map Enterprises"
+          ]
+        },
+        {
+          :isbn=>[
+            "0762557362",
+            "9780762557363"
+          ],
+          :title=>"Denver Co Deluxe Flip Map",
+          :publisher=>[
+            "Universal Map Enterprises"
+          ]
+        },
+        {
+          :isbn=>[
+            "9781427401687",
+            "1427401683"
+          ],
+          :title=>"University of Denver Co 2007",
+          :publisher=>[
+            "College Prowler"
+          ]
+        },
+        {
+          :isbn=>[
+            "0762538627",
+            "9780762538621"
+          ],
+          :title=>"Denver, Co Vicinity (City Wall Maps)",
+          :publisher=>[
+            "Universal Map Enterprises"
+          ]
+        },
+        {
+          :isbn=>[
+            "0738518700",
+            "9780738518701"
+          ],
+          :title=>"Five Points Neighborhood of Denver  (CO)",
+          :publisher=>[
+            "Arcadia  Publishing (SC)"
+          ]
+        }
+      ]
+    }
+  }
+}
