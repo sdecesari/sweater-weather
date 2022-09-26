@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: sweater-whether_development
+  database: sweater-weather_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: sweater-whether_test
+  database: sweater-weather_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: sweater-whether_production
-  username: sweater-whether
-  password: <%= ENV['SWEATER-WHETHER_DATABASE_PASSWORD'] %>
+  database: sweater-weather_production
+  username: sweater-weather
+  password: <%= ENV['SWEATER-WEATHER_DATABASE_PASSWORD'] %>
