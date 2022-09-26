@@ -8,6 +8,8 @@ describe 'Book API' do
     get '/api/v1/book_search', headers: headers, params: params
 
     expect(response).to be_successful
-    # expect(response.status).to eq(200)
+    expect(results).to be_a(Hash)
+    expect(results).to have_key(:data)
+    expect(results[:data]).to be_a(Hash)
   end
 end 
