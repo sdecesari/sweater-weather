@@ -42,7 +42,6 @@ RSpec.describe 'Forecast Service' do
       expect(daily[:temp][:min]).to be_a(Float)
       
       expect(daily[:temp]).to have_key(:max)
-      expect(daily[:temp][:max]).to be_a(Float)
       
       expect(daily[:weather][0]).to have_key(:description)
       expect(daily[:weather][0][:description]).to be_a(String)
