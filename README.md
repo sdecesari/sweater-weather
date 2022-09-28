@@ -27,7 +27,7 @@ To set up the project on your local machine, complete the following steps:
 1. Ensure you have the correct versions of both Ruby(2.7.4 or later) and Rails(5.2.8 or later) by running `ruby -v` and `rails -v` from your command line.<br>
 2. Register for free API key [here](https://developer.mapquest.com/documentation/geocoding-api/) and [here](https://openweathermap.org/api/one-call-api).
 3. Clone the repo:
-```git clone ``` &mdash; for SSH
+```git clone git@github.com:sdecesari/sweater-weather.git``` &mdash; for SSH
 4. Install gems using `bundle install`:
 ```ruby
 #global
