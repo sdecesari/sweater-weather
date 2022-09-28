@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Roadtrip' do 
+RSpec.describe 'Roadtrip', :vcr do 
   describe 'happy path' do 
     it 'can send roadtrip info' do 
       user = User.create!(email: 'shirley@me.com', password: '123test', password_confirmation: '123test')
@@ -52,5 +52,21 @@ RSpec.describe 'Roadtrip' do
 
       expect(response.status).to eq(401)
     end
+
+    it "provides immpossible route when route cannot be driven" do 
+      params = ({
+        origin: "Denver, CO",
+        destination: "Maui, HI",
+        api_key: "apikey"
+      })
+      headers = { "CONTENT_TYPE" => "application/json" }
+
+      post "/api/v1/roadtrip", headers: headers, params: JSON.generate(params)
+
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+      
+      results = JSON.parse(response.body, symbolize_names: true)[:data]
+    end 
   end
 end 
