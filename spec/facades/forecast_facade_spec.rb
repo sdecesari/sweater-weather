@@ -5,6 +5,7 @@ RSpec.describe ForecastFacade do
     lat = (39.7392)
     lon = (-104.9903)
     forecast = ForecastFacade.create_forecast(lat, lon)
+    
 
     expect(forecast).to be_a(Array)
     expect(forecast[0]).to be_a(CurrentForecast)

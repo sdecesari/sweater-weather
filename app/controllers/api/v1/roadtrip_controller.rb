@@ -4,7 +4,7 @@ class Api::V1::RoadtripController < ApplicationController
     roadtrip = RoadtripFacade.route(params[:origin], params[:destination])
     lat_lng = roadtrip[:route][:locations][1][:latLng]
     forecast = ForecastFacade.create_forecast(lat_lng[:lat], lat_lng[:lng])
-    if user.blank? == false
+    if user
       render json: RoadtripSerializer.roadtrip(roadtrip, forecast), status: 200
     else
       render status: 401
