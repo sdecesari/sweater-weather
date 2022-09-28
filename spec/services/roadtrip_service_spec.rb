@@ -10,7 +10,10 @@ RSpec.describe 'Roadtrip Service' do
 
     expect(get_location).to be_a(Hash)
     expect(get_location).to have_key(:route)
+    expect(get_location[:route]).to be_a(Hash)
     expect(get_location[:route]).to have_key(:formattedTime)
+    expect(get_location[:route][:formattedTime]).to be_a(String)
     expect(get_location[:route]).to have_key(:locations)
+    expect(get_location[:route][:locations]).to be_a(Array)
   end 
 end

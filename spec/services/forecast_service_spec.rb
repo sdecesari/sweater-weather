@@ -5,7 +5,7 @@ RSpec.describe 'Forecast Service' do
     expect(ForecastService.conn_weather).to be_a(Faraday::Connection)
   end 
 
-  it 'returns a location', :vcr do
+  it 'returns a forecast based on location', :vcr do
     get_location = ForecastService.get_weather(39.7392, -104.9903)
 
     expect(get_location).to be_a(Hash)
@@ -49,5 +49,22 @@ RSpec.describe 'Forecast Service' do
       expect(daily[:weather][0]).to have_key(:icon)
       expect(daily[:weather][0][:icon]).to be_a(String)
     end 
+
+    get_location[:hourly].each do |hourly|
+      expect(hourly).to have_key(:dt)
+      expect(hourly[:dt]).to be_a(Integer)
+
+      expect(hourly).to have_key(:temp)
+      expect(hourly[:temp]).to be_a(Float)
+
+      expect(hourly).to have_key(:weather)
+      expect(hourly[:weather]).to be_a(Array)
+
+      expect(hourly[:weather][0]).to have_key(:description)
+      expect(hourly[:weather][0][:description]).to be_a(String)
+      
+      expect(hourly[:weather][0]).to have_key(:icon)
+      expect(hourly[:weather][0][:icon]).to be_a(String)
+    end
   end 
 end 
