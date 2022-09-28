@@ -55,7 +55,7 @@ RSpec.describe 'Forecast Service' do
       expect(hourly[:dt]).to be_a(Integer)
 
       expect(hourly).to have_key(:temp)
-      expect(hourly[:temp]).to be_a(Float)
+      expect(hourly[:temp]).to be_a(Float).or be_a(Integer)
 
       expect(hourly).to have_key(:weather)
       expect(hourly[:weather]).to be_a(Array)
